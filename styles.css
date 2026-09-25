@@ -502,7 +502,7 @@ h3 {
 }
 
 .platform-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .platform-grid a {
@@ -547,6 +547,127 @@ h3 {
   flex: 0 0 auto;
 }
 
+a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 5px;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 0 40px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.site-footer p span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.footer-links a,
+.legal-copy a,
+.legal-intro a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-links a:hover,
+.legal-copy a:hover {
+  color: var(--cyan);
+}
+
+.legal-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 64px 0 80px;
+}
+
+.legal-page h1 {
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  line-height: 1.02;
+}
+
+.legal-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.legal-intro {
+  max-width: 72ch;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.legal-copy {
+  margin-top: 36px;
+  padding: clamp(22px, 5vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035));
+  box-shadow: var(--shadow);
+  overflow-wrap: anywhere;
+}
+
+.legal-copy section + section {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.legal-copy h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+.legal-copy p,
+.legal-copy li {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.legal-copy strong {
+  color: var(--text);
+}
+
+.legal-copy ul {
+  padding-left: 22px;
+}
+
+.legal-copy li + li {
+  margin-top: 12px;
+}
+
+.legal-copy section > :last-child {
+  margin-bottom: 0;
+}
+
+.legal-home {
+  margin-top: 32px;
+}
+
 @media (max-width: 900px) {
   .site-shell {
     width: min(100% - 24px, 720px);
@@ -558,6 +679,16 @@ h3 {
 
   .nav-links {
     display: none;
+  }
+
+  .legal-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .legal-header .legal-nav {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .section-pad {

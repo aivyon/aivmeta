@@ -4,7 +4,9 @@ AIVMeta is a clean, static landing page for an AI media and experimental educati
 
 ## Files
 
-- `index.html` — page content, sections, SEO title, meta description, navigation, social placeholders, and contact CTA.
+- `index.html` — page content, sections, SEO title, meta description, navigation, social profiles, contact CTA, and visible legal links.
+- `privacy.html` — website and Publisher data handling, storage, retention, disconnect behavior, and privacy requests.
+- `terms.html` — service terms, authorized accounts, content responsibilities, and third-party platforms.
 - `styles.css` — dark visual system, responsive layout, gradient accents, cards, and mobile-first styling.
 - `CNAME` — GitHub Pages custom domain configuration for `aivmeta.com`.
 
@@ -12,13 +14,13 @@ AIVMeta is a clean, static landing page for an AI media and experimental educati
 
 The platform links are in the `#platforms` section of `index.html`.
 
-Replace each placeholder `href="#"` with the live profile URL when the channel is ready:
+The links use the AIVMeta profiles on TikTok, YouTube, and Instagram. Update them only when a profile changes. For example:
 
 ```html
-<a href="https://www.tiktok.com/@yourhandle" aria-label="AIVMeta on TikTok">TikTok<span>coming soon</span></a>
+<a href="https://www.tiktok.com/@aivmeta" aria-label="AIVMeta on TikTok">TikTok<span>@aivmeta</span></a>
 ```
 
-You can also replace the `coming soon` text with a handle, upload cadence, or channel label.
+Do not add an unverified social profile. Keep both legal links visible in the footer on every public page.
 
 ## Updating content series
 
@@ -46,7 +48,13 @@ The contact CTA is in the `#contact` section of `index.html`:
 <a class="button button-primary contact-button" href="mailto:hello@aivmeta.com">hello@aivmeta.com</a>
 ```
 
-Replace the email address with the preferred inbox, form URL, or booking link when available.
+This address also receives Publisher support and privacy requests. Keep the address consistent across the homepage and legal pages.
+
+## Maintaining the legal pages
+
+Keep the policies consistent with the actual Publisher implementation. The credential vault uses Windows DPAPI, while publishing metadata and receipts remain separate local records. Disconnecting locally does not delete published content or revoke every platform's access. Review these behaviors before changing the policy and update its effective date for substantive changes.
+
+The public pages are `https://aivmeta.com/privacy.html` and `https://aivmeta.com/terms.html`. Website publication does not establish TikTok app approval; portal configuration, scope eligibility, and app review are separate.
 
 ## Deploying with GitHub Pages
 

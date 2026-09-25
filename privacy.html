@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AIVMeta</title>
+  <meta name="description" content="How the AIVMeta website and AIVMeta Publisher handle connected accounts, local media, publishing records, and privacy requests." />
+  <meta name="theme-color" content="#10061f" />
+  <link rel="canonical" href="https://aivmeta.com/privacy.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header legal-header" aria-label="Primary navigation">
+      <a class="brand" href="./" aria-label="AIVMeta home">
+        <span class="brand-mark">AIV</span><span class="brand-text">AIVMeta</span>
+      </a>
+      <nav class="nav-links legal-nav" aria-label="Site pages">
+        <a href="./">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+    <main class="legal-page">
+      <p class="eyebrow">AIVMeta / Privacy</p>
+      <h1>Privacy Policy</h1>
+      <p class="legal-date">Effective September 25, 2026</p>
+      <p class="legal-intro">This policy explains how AIVMeta handles information through this website, support communications, and AIVMeta Publisher, a Windows desktop tool for reviewing and publishing AIVMeta media to connected social accounts. Contact <a href="mailto:hello@aivmeta.com">hello@aivmeta.com</a> with privacy questions.</p>
+      <article class="legal-copy" aria-label="Privacy Policy details">
+        <section>
+          <h2>1. Connected accounts and authentication</h2>
+          <p>Publisher uses the platforms' OAuth authorization flows. Account holders sign in with the relevant platform and choose whether to grant access. Publisher receives authorization codes and, after exchange, access tokens, refresh tokens where provided, granted permissions, and expiry information. Platform passwords are not entered into Publisher.</p>
+          <p>Depending on the platform and permissions, Publisher processes account or channel IDs, display names, usernames, avatar URLs, and linked Facebook Page and Instagram professional-account information. TikTok's basic identity response supplies an account identifier, display name, and avatar URL. These details help identify the connected account and confirm the destination before publishing.</p>
+        </section>
+        <section>
+          <h2>2. Media and publishing records</h2>
+          <p>Publisher reads media files included in its local lesson library and the associated titles, descriptions, captions, hashtags, and publishing settings. It checks local files and may use locally prepared distribution copies for platform-compatible uploads.</p>
+          <p>It stores publishing metadata, account bindings, approvals, schedules, file hashes, processing status, errors, and platform responses such as upload, container, video, or post IDs and publication timestamps. These records support status checks, troubleshooting, and protection against duplicate posts.</p>
+        </section>
+        <section>
+          <h2>3. How information is used and shared</h2>
+          <p>Connected-account information and tokens are used to authenticate platform requests, confirm account identity, check permissions and upload status, and carry out publishing actions or schedules authorized by the operator.</p>
+          <ul>
+            <li><strong>TikTok:</strong> when enabled and authorized, the Inbox upload flow sends the selected video to TikTok. The account holder then finishes editing, captioning, and posting in TikTok. Direct posting, including a caption and publishing settings, is a separate flow that requires the relevant permissions and explicit setup.</li>
+            <li><strong>Instagram:</strong> authorized Reel operations transfer the selected video, caption, and applicable disclosure settings to Meta/Instagram and retrieve processing and publication status.</li>
+            <li><strong>YouTube:</strong> authorized operations transfer selected videos, titles, descriptions, privacy settings, and caption tracks where enabled; they may also manage playlist placement and scheduled public release.</li>
+          </ul>
+          <p>The Publisher workflow has no data-sale, advertising, or data-broker integration. Its connected-platform data is used for the publishing functions described here, not sold through the application. Platform providers receive the information needed for authorized API requests and process it under their own policies. Published content can be visible to others according to the account holder's platform settings.</p>
+        </section>
+        <section>
+          <h2>4. Local storage and security</h2>
+          <p>Publisher stores configured client credentials and OAuth tokens in a local vault encrypted with Windows Data Protection API (DPAPI) for the current Windows user. It checks OAuth state, uses PKCE for TikTok Desktop login, and communicates with platform APIs over HTTPS.</p>
+          <p>Publishing metadata, receipts, settings, and diagnostic records are also stored locally, including in a SQLite database and files. Those records and the media files are not encrypted by the credential vault. Access therefore also depends on the computer's account permissions, disk protection, backups, and security. Encryption and these safeguards do not guarantee that a device or account cannot be compromised.</p>
+        </section>
+        <section>
+          <h2>5. Retention, disconnecting, and revoking access</h2>
+          <p>Publisher has no automatic age-based deletion schedule for its local media library or publishing history. Records remain until the operator removes them or requests help with deletion. Disconnecting an account does not delete local videos, publishing receipts, or content already transferred to a platform.</p>
+          <ul>
+            <li><strong>TikTok:</strong> local disconnect removes stored user tokens, the connected identity, and account binding, while preserving app credentials and posting receipts. It does not send a remote revocation request.</li>
+            <li><strong>Instagram:</strong> local disconnect removes the stored connection credentials. It does not automatically revoke access at Meta; published receipts remain.</li>
+            <li><strong>YouTube:</strong> disconnect attempts Google token revocation before clearing local user tokens. If revocation fails, Publisher reports the failure and retains the token so revocation can be retried. Client configuration and publishing history are preserved.</li>
+          </ul>
+          <p>Use each platform's account or connected-app settings to revoke access there, and its content controls to remove uploaded or published media. Platform providers control retention of their own copies. Local files and backups must be handled separately by whoever controls the computer.</p>
+        </section>
+        <section>
+          <h2>6. Website visits and contact messages</h2>
+          <p>This static website does not provide an account sign-in or collect OAuth tokens. It has no AIVMeta analytics scripts, advertising pixels, or embedded social feeds. GitHub Pages hosts the site and may process connection information, such as IP addresses and request details, to serve and protect it. The site loads fonts from Google Fonts, which receives the browser requests needed to deliver them.</p>
+          <p>See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Following a social link takes you to a separate service with its own privacy practices. Emailing AIVMeta shares your email address and message with AIVMeta and the email services involved in delivery so that your request can be handled.</p>
+        </section>
+        <section>
+          <h2>7. Privacy and deletion requests</h2>
+          <p>Email <a href="mailto:hello@aivmeta.com">hello@aivmeta.com</a> to request access, correction, or deletion of information held by AIVMeta, or help removing Publisher data. Identify the relevant platform, account, and records; do not send passwords, client secrets, or tokens. We may need enough information to verify that you are entitled to make the request.</p>
+          <p>AIVMeta can address information it controls and provide guidance for local data. It cannot remotely erase files on a computer it does not control or guarantee deletion from third-party platforms. We will explain any records that cannot be removed, including information that must be retained to meet applicable legal obligations or address a dispute.</p>
+        </section>
+        <section>
+          <h2>8. Updates and contact</h2>
+          <p>We may update this policy as the website or publishing workflow changes. The effective date above identifies the current version. For questions about this policy or a privacy request, contact <a href="mailto:hello@aivmeta.com">hello@aivmeta.com</a>.</p>
+        </section>
+      </article>
+      <a class="button button-secondary legal-home" href="./">Back to AIVMeta</a>
+    </main>
+    <footer class="site-footer">
+      <p>AIVMeta <span>AI media &amp; visual learning</span></p>
+      <nav class="footer-links" aria-label="Legal and contact">
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:hello@aivmeta.com">hello@aivmeta.com</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
