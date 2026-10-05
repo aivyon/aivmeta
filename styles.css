@@ -89,15 +89,11 @@ a {
 }
 
 .brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border-radius: 50%;
-  color: #15051a;
-  font-size: 0.82rem;
-  letter-spacing: -0.04em;
-  background: linear-gradient(135deg, var(--cyan), var(--magenta) 52%, var(--orange));
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .brand-text {
